@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <title>Register to the code review</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
   </head>
 
   <body>
@@ -22,7 +23,7 @@
       </section>
 
       <form method="post" action="index.html">
-        <fieldset>
+        <fieldset class="contact-info">
           <legend>Contact Information</legend>
           <label for="name">full name</label>
           <input type="text" id="name" name="user_fullName" placeholder="required" aria-describedby="name-format" required aria-required="true" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname">
@@ -61,7 +62,8 @@
         </fieldset> <!-- END: FIELDSET CONTACT INFORMATION -->
 
         <!-- START: FIELDSET NEWSLETTER -->
-        <fieldset>
+        <hr>
+        <fieldset class="newsletter-section">
           <legend>Newsletter</legend>
           <label>Select the newsletters you would like to receive</label><br>
           <input type="checkbox" id="html" value="interest_html" name="user_interest">

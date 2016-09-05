@@ -1,0 +1,142 @@
+/************************
+    CSS SUMMARY:
+      1.GENERAL
+
+************************/
+
+
+/* font-family: 'Merriweather', serif; */
+
+/************************
+    GENERAL
+************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+}
+
+
+
+
+/************************
+    HEADER
+************************/
+
+header {
+  background-color: #2d3945;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+
+
+/************************
+    MAIN
+************************/
+
+main {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+main section {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 4px solid black;
+}
+
+main section h2 {
+  font-size: 1.2em;
+}
+
+main section p {
+  font-size: .8em;
+  font-weight: lighter;
+}
+
+
+
+/************************
+    FORM
+************************/
+
+form {
+  margin-top: 5px;
+  padding-top: 20px;
+  border-top: 2px solid black
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+fieldset legend {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+
+
+/************************
+    .CONTACT-INFO
+************************/
+
+.contact-info label {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: .9em;
+}
+
+.contact-info input, .contact-info select  {
+  margin: 15px 0 20px;
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  background-color: #ddd;
+  border: none;
+}
+
+.contact-info input:last-of-type {
+  display: block;
+  width: 60%;
+}
+
+
+
+/************************
+    NEWSLETTER-SECTION
+************************/
+
+hr {
+  border: 0;
+  height: 2px;
+  background: #333;
+}
+
+.newsletter-section {
+  margin-top: 30px;
+  font-weight: lighter;
+  font-size: .9em;
+}
+
+
+.newsletter-section input[type="checkbox"] {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
