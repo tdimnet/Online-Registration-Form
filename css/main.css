@@ -103,8 +103,9 @@ fieldset legend {
   font-size: .9em;
 }
 
-.contact-info input, .contact-info select  {
+.contact-info input, .contact-info select, .newsletter-section textarea  { /* WARNING: .newsletter-section textarea is at the wrong place */
   margin: 15px 0 20px;
+  border-radius: 6px;
   width: 100%;
   height: auto;
   padding: 15px;
@@ -131,12 +132,41 @@ hr {
 
 .newsletter-section {
   margin-top: 30px;
+}
+
+.newsletter-section div {
+  padding: 2px 4px;
   font-weight: lighter;
   font-size: .9em;
 }
 
+.newsletter-section input[type=checkbox], .newsletter-section input[type=radio] {
+  margin: 5px 10px;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
 
-.newsletter-section input[type="checkbox"] {
-  margin-top: 5px;
-  margin-bottom: 5px;
+button {
+  width: 100%;
+  height: 50px;
+  background-color: #4ebbb5;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/************************
+    FOOTER
+************************/
+
+footer {
+  text-align: center;
+  font-weight: lighter;
+  color: #aaa;
+  font-style: italic;
+  font-size: .9em;
 }
