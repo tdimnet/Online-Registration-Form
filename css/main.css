@@ -1,7 +1,7 @@
 /************************
     CSS SUMMARY:
       1.GENERAL
-
+      2.HEADER
 ************************/
 
 
@@ -11,15 +11,12 @@
 ************************/
 
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Merriweather', serif;
 }
-
 
 
 
@@ -103,7 +100,43 @@ fieldset legend {
   font-size: .9em;
 }
 
-.contact-info input, .contact-info select, .newsletter-section textarea  { /* WARNING: .newsletter-section textarea is at the wrong place */
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+/* these rules below allow to place the placeholder on the right */
+::-webkit-input-placeholder {
+   color: #777;
+   text-align: right;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #777;
+  text-align: right;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #777;
+  text-align: right;
+}
+
+:-ms-input-placeholder {
+  color: #777;
+  text-align: right;
+}
+/* End of special placeholder rules */
+
+.contact-info input,
+.contact-info select,
+.newsletter-section textarea  { /* WARNING: .newsletter-section textarea is at the wrong place */
   margin: 15px 0 20px;
   /*border-radius: 6px;*/
   width: 100%;
@@ -163,6 +196,7 @@ button + button {
 
 button:hover {
   background-color: #55CCC5;
+  -webkit-transition: .2s;
   transition: .2s;
 }
 
@@ -178,43 +212,6 @@ footer {
   font-style: italic;
   font-size: .9em;
 }
-
-
-/* Some tests here */
-::-webkit-input-placeholder {
-   color: #777;
-   text-align: right;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-  color: #777;
-  text-align: right;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-  color: #777;
-  text-align: right;
-}
-
-:-ms-input-placeholder {
-  color: #777;
-  text-align: right;
-}
-
-
-input[type=text]:focus,
-input[type=email]:focus,
-input[type=tel]:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid #ddd;
-  border-radius: 5px;
-  background: #fff;
-  transition: .3s;
-}
-
-
-
 
 
 
