@@ -222,12 +222,7 @@ select:focus {
     MEDIA QUERIES
 ************************/
 
-/*@media screen and (min-width: 480px) {
-
-}*/
-
-
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 480px) {
   main {
     max-width: 760px;
   }
@@ -243,12 +238,21 @@ select:focus {
   .contact-info label {
     width: 30%;
     float: left;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
   }
 
   .contact-info input, .contact-info select, .contact-info input:last-of-type {
     width: 65%;
     margin-top: 0;
+  }
+
+}
+
+
+@media screen and (min-width: 760px) {
+
+  .contact-info label, .contact-info legend {
+    padding: 15px;
   }
 
   button {
