@@ -26,13 +26,13 @@
         <fieldset class="contact-info">
           <legend>Contact Information</legend>
           <label for="name">full name</label>
-          <input type="text" id="name" name="user_fullName" placeholder="required" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname">
+          <input type="text" id="name" name="user_fullName" placeholder="required" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" aria-describedby="name-format"> <span id="name-format" class="help">Format: firstname lastname</span>
           <br>
           <label for="email">email address</label>
           <input type="email" id="email" name="user_email" placeholder="required" required>
           <br>
-          <label for="website">Webiste</label>
-          <input type="text" id="website" name="user_website" placeholder="required" required>
+          <label for="website">website</label>
+          <input type="url" id="website" name="user_website" placeholder="required" required>
           <br>
           <label for="phone_number">phone number</label>
           <input type="tel" id="phone_number" name="user_phone_number">
@@ -79,6 +79,17 @@
             <label for="html_format">HTML</label><br>
             <input type="radio" id="text_format" value="plain_text" name="user_newsletter_format">
             <label for="text_format">Plain Text</label><br>
+
+            <label for="source">Where did you hear about us?</label>
+            <select id="source" name="user_source">
+              <option value="" disabled selected hidden>Choose one</option>
+              <option value="Search">Search engine</option>
+              <option value="Social">Social media</option>
+              <option value="Magazine">Computer magazine</option>
+              <option value="Friend">Friend</option>
+              <option value="Other">Secret services</option>
+            </select>
+            <br>
 
             <label for="comment">Other topics you would like to hear about</label><br>
             <textarea name="user_comment" id="comment"></textarea><br>
